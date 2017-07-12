@@ -1,0 +1,40 @@
+---
+search_field:
+  title: Campo de pesquisa
+  content: ""
+advanced:
+  title: Avançado
+  content: 'Reduza seus parâmetros de pesquisa. Um vez que você selecionou e executou seus critérios de busca avançada, você pode <span class="doc-desc-title">Exportar </span> os dados na parte inferior da página de tickets.'
+open_tickets_table:
+  title: Tabela de tickets aberta
+  content: Tickets atualmente abertos e que requerem atenção
+ticket:
+  title: Ticket
+  content: ""
+date:
+  title: Data
+  content: ""
+subject:
+  title: Assunto
+  content: ""
+from:
+  title: De
+  content: ""
+priority:
+  title: Prioridade
+  content: ""
+assigned_to:
+  title: Atribuído a
+  content: ""
+export:
+  title: Exportar
+  content: Exporte seus dados atualmente no modo de exibição em um arquivo CSV. Arquivos CSV podem ser abertos com qualquer software de planilha eletrônica (ou seja, Microsoft Excel, páginas da Apple, OpenOffice, etc.).
+advanced_search_dialog:
+  title: Pesquisa Avançada
+  content: ""
+adv_keyword:
+  title: Pesquisar palavra-chave
+  content: Encontre soluções baseadas no assunto ou corpo da mensagem do ticket, bem como todo o conteúdo textual associado aos campos personalizados para os usuários e tickets.
+adv_date_range:
+  title: Pesquisar por intervalo de datas
+  content: Definição aqui

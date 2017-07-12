@@ -1,0 +1,33 @@
+---
+- 
+  topic_id: 1
+  isactive: 1
+  ispublic: 1
+  dept_id: 1
+  priority_id: 2
+  topic: Questões gerais
+  notes: Perguntas sobre produtos ou serviços
+- 
+  isactive: 1
+  ispublic: 1
+  dept_id: 1
+  priority_id: 1
+  topic: Resposta
+  notes: Chamados que dizem respeito principalmente a departamentos de vendas e faturamento
+- 
+  topic_id: 10
+  isactive: 1
+  ispublic: 1
+  dept_id: 1
+  priority_id: 2
+  topic: Relate um problema
+  notes: Problemas relacionados ao produto, serviço ou equipamento
+- 
+  topic_pid: 10
+  isactive: 1
+  ispublic: 1
+  dept_id: 1
+  sla_id: 1
+  priority_id: 3
+  topic: Problema de acesso
+  notes: Relatar uma impossibilidade de acesso físico ou virtual

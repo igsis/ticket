@@ -1,0 +1,55 @@
+---
+- 
+  isactive: 1
+  name: Domadores de Leões
+  notes: Administradores do sistema. Essas pessoas (inicialmente) têm controle total para todos os departamentos aos quais têm acesso.
+  can_create_tickets: 1
+  can_edit_tickets: 1
+  can_delete_tickets: 1
+  can_close_tickets: 1
+  can_assign_tickets: 1
+  can_transfer_tickets: 1
+  can_ban_emails: 1
+  can_manage_premade: 1
+  can_manage_faq: 1
+  can_post_ticket_reply: 1
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  isactive: 1
+  name: Caminhantes de Elefantes
+  notes: Habitantes da torre de marfim
+  can_create_tickets: 1
+  can_edit_tickets: 1
+  can_delete_tickets: 1
+  can_close_tickets: 1
+  can_assign_tickets: 1
+  can_transfer_tickets: 1
+  can_ban_emails: 1
+  can_manage_premade: 1
+  can_manage_faq: 1
+  can_post_ticket_reply: 1
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  isactive: 1
+  name: Treinadores de Pulgas
+  notes: Membros da equipe de atendimento
+  can_create_tickets: 1
+  can_edit_tickets: 1
+  can_delete_tickets: 0
+  can_close_tickets: 1
+  can_assign_tickets: 1
+  can_transfer_tickets: 1
+  can_ban_emails: 0
+  can_manage_premade: 0
+  can_manage_faq: 0
+  can_post_ticket_reply: 1
+  depts:
+    - 1
+    - 2
+    - 3

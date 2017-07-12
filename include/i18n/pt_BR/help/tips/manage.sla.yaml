@@ -1,0 +1,10 @@
+---
+name:
+  title: Nome
+  content: 'Escolha um nome descritivo para este <span class="doc-desc-title"> Plano de SLA</span> que refletirá sua finalidade.'
+grace_period:
+  title: Período de carência
+  content: 'Determine o número de horas depois que um Tiket é criado, e  será automaticamente marcado como vencido. <br><br><em>Horas são contadas a partir do Filtro de Tkets crie o tempo.</em>'
+transient:
+  title: Transitório
+  content: 'Transientes SLAs são considerados temporários e podem ser substituídos por um SLA não transitório na transferência de <span class="doc-desc-opt"> Departamento</span>, ou quando seu <span class="doc-desc-title"> tópico de ajuda</span> é alterado.'

@@ -1,0 +1,18 @@
+---
+notes: 'Enviado aos usuários quando uma nova mensagem é enviada por um usuário para atualizar um chamado.  Isso pode ocorrer se o usuário responde a um e-mail do sistema ou visita ao portal do cliente e envia uma nova mensagem lá.'
+subject: Confirmação de mensagem
+body: |
+  <h3><strong>Prezado %{recipient.name.first},</strong></h3>
+  A sua resposta ao ticket <a
+  href="%{recipient.ticket_link}">#%{ticket.number}</a> foi respondido 
+  <br>
+  <br>
+  <div style="color: rgb(127, 127, 127); ">
+  Equipe %{company.name} ,<br>
+  %{signature}
+  </div>
+  <hr>
+  <div style="color: rgb(127, 127, 127); font-size: small; text-align:
+  center"><em>Você pode acompanhar o progresso do ticket <a
+  href="%{recipient.ticket_link}">online aqui</a></em>
+  </div>

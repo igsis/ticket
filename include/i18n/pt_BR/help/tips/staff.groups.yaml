@@ -1,0 +1,10 @@
+---
+groups:
+  title: Grupos
+  content: Grupos são usados para definir as permissões do agente no help desk. Grupos também podem conceder acesso aos departamentos que não seja departamento principal de um agente.
+status:
+  title: Status
+  content: 'Se <span class="doc-desc-opt"> desativado</span>, agentes atribuídos a este grupo não pode entrar e não receberá departamento alertas e avisos.'
+department_access:
+  title: Acesso de departamento
+  content: Verifique se todos os departamentos para que os membros do grupo têm permissão de acesso.

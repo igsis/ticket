@@ -1,0 +1,6 @@
+---
+- 
+  isenabled: 1
+  noalerts: 0
+  name: Nível 1 de Atendimento
+  notes: Atendimento de nível 1, responsável pelo atendimento inicial aos clientes

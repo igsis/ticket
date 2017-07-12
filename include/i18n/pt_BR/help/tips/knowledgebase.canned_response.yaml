@@ -1,0 +1,11 @@
+---
+canned_response:
+  title: Resposta Pronta
+  content: 'Crie uma <span class="doc-desc-title">Resposta Pronta</span> que pode ser incluída numa resposta ao ticket. Pode também ser incluído na configuração da <span class="doc-desc-title">Resposta Automática de Ticket</span> por um <span class="doc-desc-title">Filtro de Ticket</span>.'
+  links:
+    - 
+      title: Configurar um Filtro de Ticket
+      href: /scp/filters.php
+canned_attachments:
+  title: Anexos prontos
+  content: 'Anexe um arquivo que você gostaria de ser incluído automaticamente na resposta de Tiket que utiliza a nova <span class="doc-desc-title"> Resposta enlatada</span>.'

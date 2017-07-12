@@ -1,0 +1,11 @@
+---
+site_pages:
+  title: Páginas do site
+  content: Páginas do site podem servir como um mini sistema de gerenciamento de conteúdo (CMS). Você pode definir várias páginas de destino Off-line, e páginas de agradecimento e configurá-las nas configurações da empresa e tópicos da ajuda.
+  links:
+    - 
+      title: Configurações da empresa
+      href: /scp/settings.php?t=pages
+type:
+  title: Tipo
+  content: 'As páginas <span class="doc-desc-opt"> offline</span> são exibidas no portal do cliente, se seu HelpDesk está desabilitado. páginas de <span class="doc-desc-opt"> destino</span> são exibidas na página inicial do seu portal de cliente. <span class="doc-desc-opt"> Obrigado</span> são páginas exibidas depois que um usuário envia um Tiket. <span class="doc-desc-opt"> outras</span> páginas podem ser usadas como um sistema simples de gerenciamento de conteúdo (CMS).'

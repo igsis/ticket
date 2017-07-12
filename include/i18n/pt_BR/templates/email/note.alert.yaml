@@ -1,0 +1,41 @@
+---
+notes: Enviada aos membros da equipe quando uma nova nota interna é anexada a um chamado. Notas internas só podem ser adicionadas por membros da equipe.
+subject: Alerta de nova nota interna
+body: |2
+  <h3><strong>Olá %{recipient},</strong></h3>
+  Uma nota interna foi adicionada ao chamado <a
+  href="%{ticket.staff_link}">#%{ticket.number}</a>
+  <br>
+  <br>
+  <table>
+  <tbody>
+  <tr>
+      <td>
+          <strong>From</strong>:
+      </td>
+      <td>
+          %{note.poster}
+      </td>
+  </tr>
+  <tr>
+      <td>
+          <strong>Title</strong>:
+      </td>
+      <td>
+          %{note.title}
+      </td>
+  </tr>
+  </tbody>
+  </table>
+  <br>
+  %{note.message}
+  <br>
+  <br>
+  <hr>
+  Para ver ou responder ao chamado, favor <a
+  href="%{ticket.staff_link}">acessar</a>ao sistema de atendimento<br>
+  <br>
+  <em style="font-size: small; ">Seu amigo, Sistema de Atendimento</em>
+  <br>
+  <img src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc"
+  alt="Powered by osTicket" width="126" height="19" style="width: 126px;">%{ticket.number}

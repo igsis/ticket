@@ -1,0 +1,8 @@
+---
+listing_type:
+  title: Tipo de listagem
+  content: 'Escolha <span class="doc-desc-opt"> pública (publicar)</span> se quiser que este <span class="doc-desc-title"> FAQ</span>, que serão publicados na base de conhecimento público, se a categoria-mãe é pública.'
+  links:
+    - 
+      title: Habilitar a base de conhecimento ao público para o Portal do cliente
+      href: /scp/settings.php?t=kb

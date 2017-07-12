@@ -1,0 +1,183 @@
+<?php
+if(!defined('OSTADMININC') || !$thisstaff || !$thisstaff->isAdmin() || !$config) die('Access Denied');
+
+$gmtime = Misc::gmtime();
+?>
+<h2>Configurações &amp; Preferências do Sistema - <span>osTicket (<?php echo $cfg->getVersion(); ?>)</span></h2>
+<form action="settings.php?t=system" method="post" id="save">
+<?php csrf_token(); ?>
+<input type="hidden" name="t" value="system" >
+<table class="form_table settings_table" width="940" border="0" cellspacing="0" cellpadding="2">
+    <thead>
+        <tr>
+            <th colspan="2">
+                <h4>Configurações &amp; Preferências do Sistema</h4>
+                <em><b>Configurações Generais</b></em>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td width="220" class="required">Helpdesk Status:</td>
+            <td>
+                <span>
+                <label><input type="radio" name="isonline"  value="1"   <?php echo $config['isonline']?'checked="checked"':''; ?> />&nbsp;<b>Online</b>&nbsp;</label>
+                <label><input type="radio" name="isonline"  value="0"   <?php echo !$config['isonline']?'checked="checked"':''; ?> />&nbsp;<b>Offline</b></label>
+                &nbsp;<font class="error"><?php echo $config['isoffline']?'osTicket offline':''; ?></font>
+                <i class="help-tip icon-question-sign" href="#helpdesk_status"></i>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td width="220" class="required">Helpdesk URL:</td>
+            <td>
+                <input type="text" size="40" name="helpdesk_url" value="<?php echo $config['helpdesk_url']; ?>">
+                &nbsp;<font class="error">*&nbsp;<?php echo $errors['helpdesk_url']; ?></font>
+                <i class="help-tip icon-question-sign" href="#helpdesk_url"></i>
+        </td>
+        </tr>
+        <tr>
+            <td width="220" class="required">Helpdesk Nome/Título:</td>
+            <td><input type="text" size="40" name="helpdesk_title" value="<?php echo $config['helpdesk_title']; ?>">
+                &nbsp;<font class="error">*&nbsp;<?php echo $errors['helpdesk_title']; ?></font>
+                <i class="help-tip icon-question-sign" href="#helpdesk_name_title"></i>
+            </td>
+        </tr>
+        <tr>
+            <td width="220" class="required">Departamento Padrão:</td>
+            <td>
+                <select name="default_dept_id">
+                    <option value="">&mdash; Selecione Departamento Padrão &mdash;</option>
+                    <?php
+                    $sql='SELECT dept_id,dept_name FROM '.DEPT_TABLE.' WHERE ispublic=1';
+                    if(($res=db_query($sql)) && db_num_rows($res)){
+                        while (list($id, $name) = db_fetch_row($res)){
+                            $selected = ($config['default_dept_id']==$id)?'selected="selected"':''; ?>
+                            <option value="<?php echo $id; ?>"<?php echo $selected; ?>><?php echo $name; ?> Dept</option>
+                        <?php
+                        }
+                    } ?>
+                </select>&nbsp;<font class="error">*&nbsp;<?php echo $errors['default_dept_id']; ?></font>
+                <i class="help-tip icon-question-sign" href="#default_department"></i>
+            </td>
+        </tr>
+
+        <tr><td>Tamanho de Página Padrão:</td>
+            <td>
+                <select name="max_page_size">
+                    <?php
+                     $pagelimit=$config['max_page_size'];
+                    for ($i = 5; $i <= 50; $i += 5) {
+                        ?>
+                        <option <?php echo $config['max_page_size']==$i?'selected="selected"':''; ?> value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                        <?php
+                    } ?>
+                </select>
+                <i class="help-tip icon-question-sign" href="#default_page_size"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Nível de Log Padrão:</td>
+            <td>
+                <select name="log_level">
+                    <option value=0 <?php echo $config['log_level'] == 0 ? 'selected="selected"':''; ?>>None (Disable Logger)</option>
+                    <option value=3 <?php echo $config['log_level'] == 3 ? 'selected="selected"':''; ?>> DEBUG</option>
+                    <option value=2 <?php echo $config['log_level'] == 2 ? 'selected="selected"':''; ?>> WARN</option>
+                    <option value=1 <?php echo $config['log_level'] == 1 ? 'selected="selected"':''; ?>> ERROR</option>
+                </select>
+                <font class="error">&nbsp;<?php echo $errors['log_level']; ?></font>
+                <i class="help-tip icon-question-sign" href="#default_log_level"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Limpar Logs:</td>
+            <td>
+                <select name="log_graceperiod">
+                    <option value=0 selected>Nunca Limpar Logs</option>
+                    <?php
+                    for ($i = 1; $i <=12; $i++) {
+                        ?>
+                        <option <?php echo $config['log_graceperiod']==$i?'selected="selected"':''; ?> value="<?php echo $i; ?>">
+                            Depois&nbsp;<?php echo $i; ?>&nbsp;<?php echo ($i>1)?'Months':'Month'; ?></option>
+                        <?php
+                    } ?>
+                </select>
+                <i class="help-tip icon-question-sign" href="#purge_logs"></i>
+            </td>
+        </tr>
+        <tr>
+            <td width="180">Nome Padrão de Formatação:</td>
+            <td>
+                <select name="name_format">
+<?php foreach (PersonsName::allFormats() as $n=>$f) {
+    list($desc, $func) = $f;
+    $selected = ($config['name_format'] == $n) ? 'selected="selected"' : ''; ?>
+                    <option value="<?php echo $n; ?>" <?php echo $selected;
+                        ?>><?php echo $desc; ?></option>
+<?php } ?>
+                </select>
+                <i class="help-tip icon-question-sign" href="#default_name_formatting"></i>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <em><b>Data e Hora Opções</b>&nbsp;
+                <i class="help-tip icon-question-sign" href="#date_time_options"></i>
+                </em>
+            </th>
+        </tr>
+        <tr><td width="220" class="required">Formato da Hora:</td>
+            <td>
+                <input type="text" name="time_format" value="<?php echo $config['time_format']; ?>">
+                    &nbsp;<font class="error">*&nbsp;<?php echo $errors['time_format']; ?></font>
+                    <em><?php echo Format::date($config['time_format'], $gmtime, $config['tz_offset'], $config['enable_daylight_saving']); ?></em></td>
+        </tr>
+        <tr><td width="220" class="required">Formato da Data:</td>
+            <td><input type="text" name="date_format" value="<?php echo $config['date_format']; ?>">
+                        &nbsp;<font class="error">*&nbsp;<?php echo $errors['date_format']; ?></font>
+                        <em><?php echo Format::date($config['date_format'], $gmtime, $config['tz_offset'], $config['enable_daylight_saving']); ?></em>
+            </td>
+        </tr>
+        <tr><td width="220" class="required">Formato Data &amp; Hora:</td>
+            <td><input type="text" name="datetime_format" value="<?php echo $config['datetime_format']; ?>">
+                        &nbsp;<font class="error">*&nbsp;<?php echo $errors['datetime_format']; ?></font>
+                        <em><?php echo Format::date($config['datetime_format'], $gmtime, $config['tz_offset'], $config['enable_daylight_saving']); ?></em>
+            </td>
+        </tr>
+        <tr><td width="220" class="required">Formato Dia, Data &amp; Hora:</td>
+            <td><input type="text" name="daydatetime_format" value="<?php echo $config['daydatetime_format']; ?>">
+                        &nbsp;<font class="error">*&nbsp;<?php echo $errors['daydatetime_format']; ?></font>
+                        <em><?php echo Format::date($config['daydatetime_format'], $gmtime, $config['tz_offset'], $config['enable_daylight_saving']); ?></em>
+            </td>
+        </tr>
+        <tr><td width="220" class="required">Padrão Fuso Horário:</td>
+            <td>
+                <select name="default_timezone_id">
+                    <option value="">&mdash; Selecione Fuso Horário Padrão &mdash;</option>
+                    <?php
+                    $sql='SELECT id, offset,timezone FROM '.TIMEZONE_TABLE.' ORDER BY id';
+                    if(($res=db_query($sql)) && db_num_rows($res)){
+                        while(list($id, $offset, $tz)=db_fetch_row($res)){
+                            $sel=($config['default_timezone_id']==$id)?'selected="selected"':'';
+                            echo sprintf('<option value="%d" %s>GMT %s - %s</option>', $id, $sel, $offset, $tz);
+                        }
+                    }
+                    ?>
+                </select>
+                &nbsp;<font class="error">*&nbsp;<?php echo $errors['default_timezone_id']; ?></font>
+            </td>
+        </tr>
+        <tr>
+            <td width="220">Horário de Verão:</td>
+            <td>
+                <input type="checkbox" name="enable_daylight_saving" <?php echo $config['enable_daylight_saving'] ? 'checked="checked"': ''; ?>>Observe o horário de verão
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="padding-left:250px;">
+    <input class="button" type="submit" name="submit" value="Salvar">
+    <input class="button" type="reset" name="reset" value="Redefinir">
+</p>
+</form>

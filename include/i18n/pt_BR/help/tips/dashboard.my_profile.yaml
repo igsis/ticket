@@ -1,0 +1,51 @@
+---
+contact_information:
+  title: Informações de Contato
+  content: ""
+username:
+  title: Nome de Usuário
+  content: 'Somente aqueles Agentes com status de Administrador podem alterar um nome de usuário. Se você é um Agente com privilégios de Administrador, você pode fazer isso selecionando um Agente para editar na tabela <span class="doc-desc-title">Funcionários</span>.'
+  links:
+    - 
+      title: Alterar um nome de usuário como Administrador
+      href: /scp/staff.php
+time_zone:
+  title: Fuso Horário
+  content: ""
+daylight_saving:
+  title: Horário de Verão
+  content: ""
+maximum_page_size:
+  title: Tamanho Máximo de Página
+  content: ""
+auto_refresh_rate:
+  title: Taxa de Atualização Automática
+  content: ""
+default_signature:
+  title: Assinatura Padrão
+  content: ""
+default_paper_size:
+  title: Tamanho de Papel Padrão
+  content: ""
+show_assigned_tickets:
+  title: Mostrar Chamados Atribuídos
+  content: 'Habilite está opção para esconder o seu nome da fila de <span class="doc-desc-title">Chamados Abertos</span> que foram atribuídos a você. Após se esconder, o nome do <span class="doc-desc-title">Departamento</span> a qual você pertence irá aparecer onde seu nome seria exibido normalmente.'
+password:
+  title: Senha
+  content: ""
+current_password:
+  title: Senha Atual
+  content: ""
+new_password:
+  title: Nova Senha
+  content: ""
+confirm_new_password:
+  title: Confirmar a Nova Senha
+  content: ""
+signature:
+  title: Assinatura
+  content: 'Crie uma <span class="doc-desc-title">assinatura</span> opcional para aparecer no final do seu chamado. Se essa <span class="doc-desc-title">assinatura</span> irá aparecer ou não, depende do <span class="doc-desc-title"> Modelo de Email</span> que será usado em uma resposta de chamado.'
+  links:
+    - 
+      title: Criar modelos de E-mails no Painel de Administração
+      href: /scp/templates.php

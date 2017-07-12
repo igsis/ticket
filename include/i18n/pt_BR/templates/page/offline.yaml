@@ -1,0 +1,10 @@
+---
+notes: A página Offline aparece no Portal do Cliente quando o Help Desk está offline.
+name: Desligado
+body: |
+  <div><h1>
+  <span style="font-size: medium">Sistema de Atendimento Desligado</span>
+  </h1>
+  <p>Obrigado por tentar nos contatar.</p>
+  <p>Nosso sistema de atendimento está desligado nesse momento, favor checar novamente em breve.</p>
+  </div>

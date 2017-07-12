@@ -1,0 +1,46 @@
+---
+- 
+  id: 1
+  name: Abrir
+  state: aberto
+  mode: 3
+  sort: 1
+  flags: 0
+  properties:
+    description: Tickets Abertos.
+- 
+  id: 2
+  name: Resolvido
+  state: resolved
+  mode: 3
+  sort: 2
+  flags: 0
+  properties:
+    description: Tickets resolvidos são tickets fechados que podem ser reabertos pelo usuário final. Isso pode ser útil quando um gatilho é usado para fechar passagens resolvidas com notificação enviada ao usuário final.
+- 
+  id: 3
+  name: Fechado
+  state: fechado
+  mode: 3
+  sort: 3
+  flags: 0
+  properties:
+    description: 'Tickets marcados como fechados não podem ser reabertos pelo usuário, mas mantêm-se acessíveis  nos painéis do cliente e do atendente.'
+- 
+  id: 4
+  name: Arquivados
+  state: archived
+  mode: 3
+  sort: 4
+  flags: 0
+  properties:
+    description: Tickets administrativos estão disponíveis, mas não acessíveis em fila de tickets.
+- 
+  id: 5
+  name: Deletado
+  state: deleted
+  mode: 3
+  sort: 5
+  flags: 0
+  properties:
+    description: Existe Tickets na fila para exclusão. Esses Tickets não estão acessíveis na fila de Tickets.

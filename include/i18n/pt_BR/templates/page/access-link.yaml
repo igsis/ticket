@@ -1,0 +1,4 @@
+---
+notes: Este modelo define a notificação que é enviada aos clientes alertando-os de que um link de acesso foi enviado para o seu e-mail. O e-mail contém um link para acessar as informações.
+name: 'Link de acesso ao Ticket [%{ticket.number}]'
+body: '<h3><strong>Olá %{recipient.name.first},</strong></h3> <div>Uma solicitação de acesso para o ticket #%{ticket.number} foi enviado em seu nome no endereço %{url}.<br /> <br /> Segue o link abaixo para verificar o status do ticket #%{ticket.number}.<br /> <br /> <a href="%{recipient.ticket_link}">%{recipient.ticket_link}</a><br /> <br /> Se você recebeu esse e-mail por <strong>engano</strong>, é muito provável que outro usuário tenha digitado seu endereço de e-mail por engano. Caso você não tenha feito essa solicitação, não precisa tomar nenhuma ação e pode simplesmente desconsiderar esse e-mail.<br /> <br /> --<br />%{company.name} </div>'

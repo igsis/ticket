@@ -1,0 +1,13 @@
+---
+signature:
+  title: Linha de assinatura do funcionário
+  content: Crie as assinaturas dos funcionários para responder aos tickets. Esta assinatura aparecerá como uma opção na parte inferior de uma resposta do ticket
+type:
+  title: Tipo de Conta
+  content: Administradores têm o privilégio de acessar o painel de Administrador. Funcionário só tenho acesso ao gerenciar tickets e a base de conhecimento
+group:
+  title: Grupo atribuído
+  content: Associação de grupo define o papel do funcionário no sistema. Visite a página de gerenciamento de grupo para definir qual acesso este funcionário tem para o help desk
+notes:
+  title: Notas internas
+  content: Coloque notas internas relativas à funcionário; notas só são visíveis ao funcionário cujo tipo de conta é Administrador

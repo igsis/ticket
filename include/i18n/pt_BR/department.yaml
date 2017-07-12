@@ -1,0 +1,20 @@
+---
+- 
+  id: 1
+  name: Atendimento
+  signature: Departamento de Atendimento
+  ispublic: 1
+  group_membership: 1
+- 
+  id: 2
+  name: Vendas
+  signature: Vendas e Retenção de Clientes
+  ispublic: 1
+  sla_id: 1
+  group_membership: 1
+- 
+  id: 3
+  name: Manutenção
+  signature: Departamento de Manutenção
+  ispublic: 0
+  group_membership: 0

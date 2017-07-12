@@ -1,0 +1,14 @@
+---
+- 
+  isactive: 1
+  execorder: 99
+  reject_ticket: 1
+  target: Email
+  name: SYSTEM BAN LIST
+  notes: Lista interna de e-mails banidos. Não remova
+  rules:
+    - 
+      isactive: 1
+      what: email
+      how: equal
+      val: teste@exemplo.com.br

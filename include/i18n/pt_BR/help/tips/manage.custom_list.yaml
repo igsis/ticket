@@ -1,0 +1,22 @@
+---
+custom_lists:
+  title: Listas personalizadas
+  content: 'Suas <span class="doc-desc-title"> listas personalizadas</span> permitirão  você à criar caixas de menu suspenso com opções predefinidas que um cliente pode selecionar em seus <span class="doc-desc-title"> Formulários personalizados</span>. Se você gostaria de usar esta <span class="doc-desc-title"> lista personalizada</span> como um <span class="doc-desc-title"> direcionado</span> a um <span class="doc-desc-title"> Filtro de Tiket</span>, certifique-se de adicionar esta lista ao seu formulário de <span class="doc-desc-title"> Detalhes do Tiket</span>.'
+name:
+  title: Nome
+  content: ""
+plural_name:
+  title: Nome plural
+  content: ""
+sort_order:
+  title: Ordem de classificação
+  content: ""
+list_s_initial_items:
+  title: Coloque itens iniciais na lista
+  content: ""
+value:
+  title: Valor
+  content: ""
+extra:
+  title: Extra
+  content: 'Abreviaturas e tal. Se acontecer de você usar códigos internos para os itens nesta lista, esses códigos e abreviaturas podem ser inseridos nesta coluna. Se a lista personalizada é processada como um <span class="doc-desc-option"> TypeAhead</span>, essas abreviações podem ser usadas para pesquisar os itens de uma lista personalizada.'

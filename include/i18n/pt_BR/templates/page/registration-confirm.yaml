@@ -1,0 +1,4 @@
+---
+notes: Este modelo define a página mostrada aos clientes após completar o formulário de inscrição. O modelo deve mencionar que o sistema está lhe enviando um link de confirmação por e-mail e qual é o próximo passo para registro.
+name: Registo de Conta
+body: '<div><strong>Obrigado por se registrar.</strong><br/> <br /> Um e-mail foi encaminhado para seu endereço. Por favor siga o link no e-mail para confirmar sua conta e ter acesso aos seus tickets.</div>'

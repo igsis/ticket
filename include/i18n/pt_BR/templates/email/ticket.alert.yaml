@@ -1,0 +1,40 @@
+---
+notes: Enviada para um membro da equipe, quando um novo chamado é criado no sistema. Isso se aplica a chamados criados via e-mail, portal da web ou via api.
+subject: Alerta de Novo Chamado
+body: |2
+  <h2>Olá %{recipient},</h2>
+  Novo chamado #%{ticket.number} criado
+  <br>
+  <br>
+  <table>
+  <tbody>
+  <tr>
+      <td>
+          <strong>From</strong>:
+      </td>
+      <td>
+          %{ticket.name} &lt;%{ticket.email}&gt;
+      </td>
+  </tr>
+  <tr>
+      <td>
+          <strong>Departmento</strong>:
+      </td>
+      <td>
+          %{ticket.dept.name}
+      </td>
+  </tr>
+  </tbody>
+  </table>
+  <br>
+  %{message}
+  <br>
+  <br>
+  <hr>
+  <div>Para ver ou responder a esse chamado, favor <a
+  href="%{ticket.staff_link}">acesse</a> ao sistema de atendimento</div>
+  <em style="font-size: small">Seu amigo, Sistema de Atendimento</em>
+  <br>
+  <a href="http://osticket.com/"><img width="126" height="19"
+      style="width: 126px; " alt="Powered By osTicket"
+      src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc"/></a>

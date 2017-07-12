@@ -1,0 +1,7 @@
+---
+staff_members:
+  title: Membros da Equipe
+  content: 'A tabela a seguir exibe os resultados do filtro acima dela. Se nenhuma configuração de filtro for escolhida, então todos os <span class="doc-desc-title">Membros da Equipe</span> serão exibidos nas páginas. Consulte a seção de páginas abaixo para navegar através de mais resultados.'
+apply_filtering_criteria:
+  title: Aplicar Critérios de Filtragem
+  content: 'Escolha um <span class="doc-desc-title">Departamento</span> que seja do seu interesse. Você também pode realizar uma pesquisa para um agente específico.'

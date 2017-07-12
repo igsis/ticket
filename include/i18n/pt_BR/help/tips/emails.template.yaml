@@ -1,0 +1,17 @@
+---
+email_templates:
+  title: Modelos de e-mail
+  content: Conjuntos de modelo de e-mail são usados para enviar alertas e respostas automáticas para várias ações que podem ocorrer durante o ciclo de vida de um ticket.
+template_to_clone:
+  title: Modelo a ser Clonado
+  content: Escolha um conjunto de modelos para clonar ou simplesmente comece com os modelos de e-mail iniciais.
+language:
+  title: Idioma
+  content: 'Selecione o idioma desejado para o <span class="doc-desc-opt"> estoque</span> <span class="doc-desc-title"> Conjunto de e-mail</span>. Pacotes de idiomas estão disponíveis em osTicket.com'
+  links:
+    - 
+      title: Pacotes de idiomas do osTicket.
+      href: http://osTicket.com/download
+status:
+  title: Status
+  content: 'Conjuntos de modelos <span class="doc-desc-opt">habilitados</span> estão disponíveis para serem associados com Departamentos e definidos para o sistema padrão. Conjuntos de modelos em uso não podem ser <span class="doc-desc-opt">desabilitados</span>.'

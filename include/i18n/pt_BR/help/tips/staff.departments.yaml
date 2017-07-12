@@ -1,0 +1,20 @@
+---
+department:
+  title: Departamento
+  content: ""
+name:
+  title: Nome
+  content: ""
+type:
+  title: Tipo
+  content: Se o tipo do departamento é privado, então a assinatura do departamento não estarão disponível na resposta nem mostrará a atribuição do departamento do Portal do cliente.
+users:
+  title: Usuários
+  content: ""
+email_address:
+  title: Endereço de Email
+  content: ""
+dept_manager:
+  title: Gerente de departamento
+  content: 'Você pode escolher um funcionário como gerente do departamento para receber Alertas & Avisos de tickets em departamentos.'
+  0: Os funcionários não precisam ser membros do departamento para ser gerente do departamento

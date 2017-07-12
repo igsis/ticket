@@ -1,0 +1,64 @@
+---
+number_format:
+  title: Formato do Número do Ticket
+  content: |-
+    Esta configuração é usada para gerar números de ticket. Use sinais de hash ('#') onde os dígitos devem ser colocados. Qualquer outro texto no formato do número será preservado.  <span class="doc-desc-title">Tópicos de Ajuda</span> é possível definir formatos numéricos personalizados.  <br/><br/> Por exemplo, para criar um número de 6 dígitos use  <code>######</code>.
+sequence_id:
+  title: Sequencia do Número do Ticket
+  content: 'Selecione uma sequência derivada a partir dos novos números de ticket. O sistema vem de fábrica com uma sequência incremental e aleatória. Você pode criar quantas sequências quiser. Use sequências diferentes no <span class="doc-desc-title">Formato de Número do Ticket</span> de configuração para tópicos de ajuda.'
+default_ticket_status:
+  title: Status Padrão para novos Tickets
+  content: Escolha um status padrão para os novos tickets. Isto pode ser definido para cada tópico de ajuda, se desejado. Ele também pode ser substituído por um filtro de ticket.
+  links:
+    - 
+      title: Gerenciar Status do Ticket
+      href: /scp/lists.php?type=ticket-status
+default_sla:
+  title: SLA Padrão
+  content: Escolha o padrão de contrato de nível de serviço para gerenciar um Tiket quanto tempo pode permanecer aberto antes dele ser marcado como vencido.
+  links:
+    - 
+      title: Criar mais planos de SLA
+      href: /scp/slas.php
+default_priority:
+  title: Prioridade Padrão
+  content: 'Escolha que um padrão <span class="doc-desc-title"> prioridade</span> para Tikets não atribuídos uma prioridade automaticamente. <br/> <br/> Prioriy pode ser atribuído através do tópico da ajuda, departamento roteado ou configurações de Tiket.'
+maximum_open_tickets:
+  title: Máximo de Tickets Abertos
+  content: 'Insira o máximo <em>número</em> de bilhetes que um usuário terá permissão para <strong>abrir</strong> em seu HelpDesk. <br><br>Enter <span class="doc-desc-opt"> 0</span> ou se você prefere desabilitar essa limitação.'
+agent_collision_avoidance:
+  title: Agente de anulação de conflito
+  content: 'Insira o  tempo máximo que um agente terá para manter um bloqueio em um bilhete sem qualquer atividade. Digite <span class="doc-desc-opt"> 0</span> para desativar o recurso de bloqueio de <br><br>.'
+email_ticket_priority:
+  title: Prioridade Ticket de e-mail
+  content: Usar prioridade de e-mail atribuída pelo serviço de email do destinatário
+show_related_tickets:
+  title: Mostrar Tikets relacionados
+  content: 'Mostrar todos os Tikets relacionados no login do usuário - caso contrário o acesso é restrito a um modo de exibição de Tiket por login'
+human_verification:
+  title: Verificação humana
+  content: 'Habilite CAPTCHA no Portal do cliente para verificar que um novo Tiket foi aberto pou uma pessoa. <br><br>Requer GDLib biblioteca'
+claim_tickets:
+  title: Tickets de Reinvidição na Resposta
+  content: 'Habilite auto-atribuição de Tikets não atribuídos para o agente de resposta. <br><br>Reabertura de Tikets serão sempre atribuídos para o último agente dele.'
+assigned_tickets:
+  title: Tickets Atribuídos
+  content: 'Habilite esse recurso para excluir Tikets atribuídos da <span class="doc-desc-title"> Abrir fila de Tikets</span>.'
+answered_tickets:
+  title: Tickets Respondidos
+  content: 'Habilite esse recurso mostrar Tikets respondidos na <span class="doc-desc-title"> Fila de respostas</span>. Caso contrário, ele será incluído na <span class="doc-desc-title"> Fila de Entrada</span>.'
+staff_identity_masking:
+  title: Ocultar identidade pessoal
+  content: Se habilitado, isso irá esconder o nome do agente do cliente durante qualquer comunicação.
+enable_html_ticket_thread:
+  title: Habilitar HTML de segmento do ticket
+  content: Se habilitado, isto permitirá o uso do editor de texto entre clientes e agentes.
+ticket_attachment_settings:
+  title: Anexar Ticket do Tópico
+  content: 'Definir as configurações para arquivos anexados no campo de <span class="doc-desc-title">detalhes de problemas</span>. Essas configurações são utilizados para todos os novos tickets e novas mensagens, independentemente do canal de origem (portal web, e-mail, api, etc.).'
+max_file_size:
+  title: Tamanho Máximo do Arquivo
+  content: Escolha tamanho máximo dos arquivos enviados pelos agentes. Isto inclui os anexos prontos, artigos da base de conhecimento e respostas anexas ao ticket.
+ticket_response_files:
+  title: Arquivos de resposta do ticket
+  content: Se habilitado, todos os anexos que um agente pode anexar a uma resposta de Tiket serão incluídos também no email para o usuário.

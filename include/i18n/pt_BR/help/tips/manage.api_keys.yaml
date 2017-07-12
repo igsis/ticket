@@ -1,0 +1,11 @@
+---
+api_key:
+  title: Chave de API
+  content: 'Chaves API são usadas para autenticar clientes submeter novos Tikets via "Application Programming Interface" (API). Chaves API são usadas em vez de senhas. Desde que as chaves API podem ser enviadas sem criptografia, estão ligados ao endereço IP de rede de cada cliente.'
+  links:
+    - 
+      title: osTicket documentação da API
+      href: https://github.com/osTicket/osTicket-1.8/blob/develop/setup/doc/api.md
+ip_addr:
+  title: Endereço IP
+  content: Endereço IP de rede do cliente. Cada endereço IP único cliente exigirá chaves separadas de API

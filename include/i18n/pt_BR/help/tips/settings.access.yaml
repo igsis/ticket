@@ -1,0 +1,28 @@
+---
+password_reset:
+  title: Política de expiração de senha
+  content: 'Define quantas vezes (em meses) funcionários Membros deverão alterar sua senha. Se desabilitado (definido como "Nenhuma expiração"), as senhas não expiram.'
+password_expiration_policy:
+  title: Política de expiração de senha
+  content: 'Escolha a forma e quantas vezes serão  necessárias  para os agentes alterarem a sua senha. Se desativada (i.e. , sem expiração), as senhas não irão expirar.'
+allow_password_resets:
+  title: Permitir redefinições de senha
+  content: 'Ativar esse recurso se você gostaria de exibir o link <span class="doc-desc-title"> Esqueci minha senha</span> do <span class="doc-desc-title"> Log no painel de funcionários</span> após um log falhou na tentativa.'
+reset_token_expiration:
+  title: Janela de redefinição de senha
+  content: 'Escolha a duração (em minutos) para o qual os <span class="doc-desc-title"> Tokens de Redefinir senha</span> serão válidos. Quando um agente solicita uma <span class="doc-desc-title"> Redefinição de senha</span>, sera enviado por email um Token que permite o reset da senha atual e a inserção de uma nova senha'
+staff_session_timeout:
+  title: Tempo limite da sessão pessoal
+  content: 'Escolher o máximo de tempo osioso (em minutos) antes que um agente possa fazer login novamente. <br><br>Se você quiser desativar o <span class="doc-desc-title"> Tempo limite da sessão de pessoal</span>, digite 0.'
+client_session_timeout:
+  title: Tempo limite de sessão de usuário
+  content: 'Escolher o máximo de tempo osioso (em minutos) antes que um agente possa fazer login novamente. <br><br>Se você quiser desativar o <span class="doc-desc-title"> Tempo limite da sessão de pessoal</span>, digite 0.'
+bind_staff_session_to_ip:
+  title: Vincular equipe por sessão de IP
+  content: 'Habilite isso se quer que o agente seja lembrado pelo seu IP atual sobre o Log in. <br><br>esta configuração não é recomendado para usuários com endereços de I.P. dinâmico.'
+registration_method:
+  title: Opções de registo
+  content: '<span class="doc-desc-title"> Método de registro</span> e <span class="doc-desc-title"> registro necessário</span> são usados juntos para configurar como os usuários registrar e acessam o portal web de seu HelpDesk. A tabela a seguir resume como as duas configurações são interpretadas pelo sistema. <table border="1" cellpadding="2px" cellspacing="0" style="margin-top:7px" > <tbody style="vertical-align:top;"> <tr><th>registro necessário</th> <th>Registo método</th> <th>resultado</th></tr> <tr><td>públicos</td> <td>não</td> <td>registo incentivada, mas não é necessário para novos Tikets.</td></tr> <tr><td>Sim</td> <td>público</td> <td>registo e login são necessários para novos Tikets</td></tr> <tr><td>Não</td> <td>privada</td> <td>qualquer um pode criar um Tiket, mas apenas agentes podem registrar contas</td></tr> <tr><td>Sim</td> <td>privada</td> o <td>acesso do usuário é apenas por convite</td></tr> <tr><td>Com deficiência</td> <td>não</td> <td>ninguém pode se registrar para uma conta, mas qualquer um pode criar um Tiket. <em>Isto foi como osTicket funcionava antes 1.9</em></td></tr> <tr><td>Sim</td> <td>com deficiência</td> <td>desativar novos Tikets através do portal web</td></tr></tbody></table>'
+client_verify_email:
+  title: Requer a verificação de E-mail
+  content: 'Desabilite esta opção para oferecer a seus usuários acesso imediato aos Tikets através da página de login "Verificar Status do Ticket" no portal do cliente. Se habilitado, (que é o padrão), os usuários deverão receber um e-mail e seguir um link no e-mail para ver o Tiket. Verificação de <br><br>e-mail desabilitando pode permitir que terceiros (por exemplo, o Tiket colaboradores) para representar o proprietário do bilhete.'

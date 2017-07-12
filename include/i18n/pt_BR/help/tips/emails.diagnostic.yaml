@@ -1,0 +1,20 @@
+---
+test_outgoing_email:
+  title: Teste de Saída de E-mail
+  content: Entrega do email depende de suas configurações de servidor (PHP. ini) e/ou configuração de SMTP.
+  links:
+    - 
+      title: Selecione um e-mail para configurar configurações de SMTP (saída)
+      href: /scp/emails.php
+from:
+  title: De
+  content: ""
+to:
+  title: Para
+  content: ""
+subject:
+  title: Assunto
+  content: ""
+message:
+  title: Mensagem
+  content: ""

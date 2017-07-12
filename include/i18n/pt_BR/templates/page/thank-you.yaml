@@ -1,0 +1,15 @@
+---
+notes: A página de agradecimento é exibida no portal do cliente quando um usuário abre um novo chamado através do portal do cliente.
+name: Obrigado
+body: |
+  <div>%{ticket.name},
+  <br>
+  <br>
+  Obrigado por nos contatar.
+  <br>
+  <br>
+  Um ticket foi criado e um atendente irá respondê-lo se necessário.</p>
+  <br>
+  <br>
+  Equipe de Atendimento
+  </div>

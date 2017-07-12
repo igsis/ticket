@@ -1,0 +1,18 @@
+---
+knowledge_base_settings:
+  title: Configurações da Base de conhecimento
+  content: ""
+knowledge_base_status:
+  title: Status da Base de conhecimento
+  content: 'Habilite essa configuração para permitir aos usuários acesso de auto-atendimento para seus artigos da base de conhecimento público. Categorias de <br><br>base de conhecimento e FAQs podem ser feitas internamente (visíveis somente por agentes).'
+  links:
+    - 
+      title: Gerenciar a Base de conhecimento
+      href: /scp/kb.php
+canned_responses:
+  title: Resposta pronta
+  content: 'Habilite essa configuração para permitir que os agentes possam usar <span class="doc-desc-title"> Respostas Prontas</span> ao responder os Tikets .'
+  links:
+    - 
+      title: Gerenciar respostas criadas
+      href: /scp/canned.php

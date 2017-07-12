@@ -1,0 +1,40 @@
+---
+notes: 'Enviado aos membros da equipe quando uma nova mensagem é enviada por um usuário para abrir um chamado.  Isso pode ocorrer se o usuário responde a um e-mail do sistema ou visita ao portal do cliente e envia uma nova mensagem lá.'
+subject: Alerta de nova mensagem
+body: |2
+  <h3><strong>Olá %{recipient},</strong></h3>
+  Nova mensagem foi adicionada ao chamado <a
+  href="%{ticket.staff_link}">#%{ticket.number}</a>
+  <br>
+  <br>
+  <table>
+  <tbody>
+  <tr>
+      <td>
+           <strong>From</strong>:
+      </td>
+      <td>
+           %{ticket.name} &lt;%{ticket.email}&gt;
+      </td>
+  </tr>
+  <tr>
+      <td>
+           <strong>Department</strong>:
+      </td>
+      <td>
+           %{ticket.dept.name}
+      </td>
+  </tr>
+  </tbody>
+  </table>
+  <br>
+  %{message}
+  <br>
+  <br>
+  <hr>
+  <div>Para ver ou responder ao chamado, favor <a
+  href="%{ticket.staff_link}"><span style="color: rgb(84, 141, 212);"
+  >acessar</span></a> ao sistema de atendimento</div>
+  <em style="color: rgb(127,127,127); font-size: small; ">Seu amigo sistema de atendimento</em><br>
+  <img src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc"
+  alt="Powered by osTicket" width="126" height="19" style="width: 126px;">

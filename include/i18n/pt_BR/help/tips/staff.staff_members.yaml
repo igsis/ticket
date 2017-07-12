@@ -1,0 +1,7 @@
+---
+staff_members:
+  title: Membros da Equipe
+  content: 'A tabela a seguir exibe os resultados do filtro acima. Se não forem escolhidas as configurações de filtro, então todos os <span class="doc-desc-title"> Agentes</span> (pessoal) <span class="doc-desc-title"> Membros</span> são exibidos e pelas páginas. Consulte a seção de páginas abaixo para navegar através de mais resultados.'
+status:
+  title: Status
+  content: 'Isto irá mostrar se o <span class="doc-desc-title">Agente</span> é Bloqueado, Ativo ou Ativo (de férias).'

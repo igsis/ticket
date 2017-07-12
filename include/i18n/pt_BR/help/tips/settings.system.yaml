@@ -1,0 +1,36 @@
+---
+helpdesk_status:
+  title: Status do Sistema
+  content: 'Se o status é alterado para <span class="doc-desc-opt">Desligado</span>, a interface do cliente será desabilitada. Isto no entanto não afetará qualquer interação do Agente com o Painel do Agente.'
+helpdesk_url:
+  title: Endereço URL do Suporte
+  content: Essa URL é a base da sua instalação do osTicket. É usada na comunicação por e-mail para direcionar os usuários finais para a interface do sistema.
+helpdesk_name_title:
+  title: Nome/Título da Central de Ajuda
+  content: Este é o título que aparece na aba do navegador. Se sua página de Help Desk for marcada, este será o nome/título da página do site.
+default_department:
+  title: Departamento Padrão
+  content: 'Escolha um padrão de <span class="doc-desc-title"> Departamento</span> para Tikets que não são atribuídos automaticamente para um departamento. <br/> <br/> Tiket pode ser atribuído na base no tópico da ajuda, email de entrada e nas configurações de Filtro de Tikets.'
+default_page_size:
+  title: Tamanho de Página Padrão
+  content: 'Escolha o número de itens exibidos por página nas filas de entrada no painel pessoal. Cada agente também pode personalizar este número por conta própria sob <span class="doc-desc-title"> Minhas preferências</span>.'
+default_log_level:
+  title: Nível de Log padrão
+  content: 'Determine o nível mínimo de questões que será gravado no <span class="doc-desc-title"> log do sistema</span>. <span class="doc-desc-opt"> depurar</span> representa a menor gravidade, e <span class="doc-desc-opt"> erro</span> representa a maior gravidade. Por exemplo, se você quiser ver todos os problemas nos <span class="doc-desc-title"> Logs do sistema</span>, escolha <span class="doc-desc-opt"> depurar</span>.'
+purge_logs:
+  title: Limpar Logs
+  content: 'Determine quanto tempo você gostaria de manter <span class="doc-desc-title"> Os Logs do sistema</span>, antes de serem excluídos.'
+default_name_formatting:
+  title: Nome Padrão de Formatação
+  content: Escolha um formato para nomes em todo o sistema. Modelos de e-mail irão usá-lo para nomes se nenhum outro formato for especificado na variável.
+  links:
+    - 
+      title: Variáveis de modelo de E-mail com suporte
+      href: http://osticket.com/wiki/Email_templates
+date_time_options:
+  title: 'Data &amp; Hora Opções'
+  content: 'As configurações a seguir definem a data &amp; hora configurações para clientes. Você pode alterar como estes aparecem seguindo os caracteres de formato de data PHP. As datas abaixo ilustram simplesmente o resultado de seus valores correspondentes.'
+  links:
+    - 
+      title: Consulte a tabela de formatação de data PHP
+      href: http://www.php.net/manual/en/function.date.php
